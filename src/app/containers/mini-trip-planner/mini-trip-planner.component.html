@@ -1,0 +1,3 @@
+<app-date-time-picker (selected)="selectedDateAndTime($event)"></app-date-time-picker>
+<button type="submit" [disabled]="!selectedTime" (click)="getDeparturePlan()">check</button>
+<app-departure-list [departures]="closestDeparturesMatches"></app-departure-list>

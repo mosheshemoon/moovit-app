@@ -1,0 +1,2 @@
+<app-departure-item class="item" *ngFor="let departure of departures" [departure]="departure"></app-departure-item>
+<div *ngIf="departures && !departures.length">No departures available</div>
